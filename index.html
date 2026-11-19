@@ -24,43 +24,38 @@
     }
 
     .card {
-      padding: 40px 25px;
       width: 100%;
       max-width: 500px;
+      padding: 40px 25px;
     }
 
-    .icon {
-      font-size: 46px;
-      margin-bottom: 24px;
+    .music-icon {
+      font-size: 45px;
+      margin-bottom: 25px;
     }
 
     h1 {
       font-size: 34px;
-      margin: 0 0 10px;
       font-weight: 500;
+      margin: 0 0 12px;
     }
 
     .subtitle {
       font-size: 20px;
       font-style: italic;
-      color: #666;
-      margin-bottom: 45px;
+      color: #777;
+      margin-bottom: 40px;
     }
 
-    .play {
-      display: inline-block;
-      background: #172b4d;
-      color: white;
-      text-decoration: none;
-      padding: 18px 32px;
-      border-radius: 40px;
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      font-weight: 600;
+    audio {
+      width: 100%;
+      max-width: 420px;
     }
 
-    .play:hover {
-      background: #254a7c;
+    .message {
+      margin-top: 35px;
+      color: #777;
+      font-size: 15px;
     }
   </style>
 </head>
@@ -69,16 +64,20 @@
 
   <div class="card">
 
-    <div class="icon">♫</div>
+    <div class="music-icon">♫</div>
 
     <h1>Nicht wegzudenken</h1>
 
     <div class="subtitle">Für Alex</div>
 
-    <a class="play"
-       href="https://foreversongs.com/de-DE/song/t/23142232f38c70418488514ddfae4dafd005ba554de85e5390bc2487a0427a52?v=remake&utm_source=resend&utm_medium=email&utm_campaign=remake-delivered&utm_content=remakeDeliveredADe">
-       ▶ Song abspielen
-    </a>
+    <audio controls preload="metadata">
+      <source src="https://files.foreversongs.com/remakes/7a1ecb5620fcb7a47d083f5060f8aeef3540135d1a3e781901cb4800da26115a_1795038731089_b96d3cce.mp3" type="audio/mpeg">
+      Dein Browser unterstützt die Audiowiedergabe nicht.
+    </audio>
+
+    <div class="message">
+      Ein Song für dich ♥
+    </div>
 
   </div>
 
